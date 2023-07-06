@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: haproxy-graphtuitous
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/haproxy-graphtuitous@sha256:e743abbce58eae809805c068b0f466734ebbd84f197000e0f3295974a5a9130d
+        name: container-image
+        resources: {}
+status: {}
