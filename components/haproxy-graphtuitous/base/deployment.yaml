@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: haproxy-graphtuitous
     spec:
       containers:
-      - image: quay.io/jduimovich0/haproxy
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/haproxy-graphtuitous@sha256:e743abbce58eae809805c068b0f466734ebbd84f197000e0f3295974a5a9130d
         imagePullPolicy: Always
         name: container-image
         ports:
