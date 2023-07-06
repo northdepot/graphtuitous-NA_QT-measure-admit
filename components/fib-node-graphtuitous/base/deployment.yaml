@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: fib-node-graphtuitous
     spec:
       containers:
-      - image: quay.io/jduimovich0/fib-node
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/fib-node-graphtuitous@sha256:d42f649f58f156ca3846af36dd75b7945e71958cfbecf836c5f51d3563178b3e
         imagePullPolicy: Always
         name: container-image
         ports:
