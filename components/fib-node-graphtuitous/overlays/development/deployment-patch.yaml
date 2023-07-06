@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fib-node-graphtuitous
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/northdepot/user1-tenant/graphtuitous/fib-node-graphtuitous@sha256:d42f649f58f156ca3846af36dd75b7945e71958cfbecf836c5f51d3563178b3e
+        name: container-image
+        resources: {}
+status: {}
